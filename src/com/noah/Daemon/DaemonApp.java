@@ -1,4 +1,4 @@
-package com.noah.Daemon;
+package com.noah.daemon;
 
 public class DaemonApp {
 	
