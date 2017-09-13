@@ -1,11 +1,15 @@
 package com.noah.concurrent;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
 public class HashMapApp {
 
 	private static Map<String, String> map = new HashMap<String, String>();
+	// Collections.synchronizedMap can make the HashMap thread safe.
+	//private static Map<String, String> map = Collections.synchronizedMap(new HashMap<String, String>());
+	
 	
 	private static class PutThread implements Runnable{
 
